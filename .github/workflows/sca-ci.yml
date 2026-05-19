@@ -13,8 +13,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Run Orca SCA Scan
-      uses: orcasecurity/shiftleft-sca-action@v1
+    - name: Run Orca FS Scan
+      uses: orcasecurity/shiftleft-fs-action@v1
       with:
           api_token: ${{ secrets.ORCA_SECURITY_API_TOKEN }}
           project_key: ${{ vars.ORCA_SECURITY_PROJECT_KEY }}
